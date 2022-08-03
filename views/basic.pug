@@ -1,0 +1,157 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/basic.css")
+        title Document
+    body
+        // ===========Nav Bar=================
+        section.nav-bar
+            .logo Go Trip
+            ul.menu
+                li
+                    a(href='/reg') Our team
+                li
+                    a(href='/reg') Sign up
+                li
+                    a(href='/login') Login
+        // ===============Banner================
+        section.banner
+            .banner-text-item
+                .banner-heading
+                    h1 Find your Next tour!
+                form.form
+                    input(type='text' list='mylist' placeholder='Where would you like to go?')
+                    datalist#mylist
+                        option London
+                        option Canada
+                        option Monaco
+                        option France
+                        option Japan
+                        option Switzerland
+                        option Seoul
+                    input.date(type='date')
+                    a.book(href='#') book
+        // =========Services===============
+        section.services
+            .service-item
+                img(src='/images/tour-guide_onzla9.png')
+                h2 8000+ Our Local Guides
+            .service-item
+                img(src='/images/reliability_jbpn4g.png')
+                h2 100% Trusted Tour Agency
+            .service-item
+                img(src='/images/experience_a3fduk.png')
+                h2 28+ Years of Travel Experience
+            .service-item
+                img(src='/images/feedback_s8z7d9.png')
+                h2 98% Our Travelers are Happy
+        // ==============Places===================
+        section.places
+            .places-text
+                small FEATURED TOURS PACKAGES
+                h2 Favourite Places
+            .cards
+                .card
+                    .zoom-img
+                        .img-card
+                            img(src='/images/james-wheeler_xqmq2y.jpg')
+                    .text
+                        span.rating ⭐⭐⭐⭐⭐
+                        h2 The Dark Forest Adventure
+                        p.cost $1870 / Per Person
+                        .card-box
+                            p.time 🕓 3 Days
+                            p.location ✈ Vancouver, Canada
+                .card
+                    .zoom-img
+                        .img-card
+                            img(src='/images/paris_uj8wum.jpg')
+                    .text
+                        span.rating ⭐⭐⭐⭐⭐
+                        h2 The Dark Forest Adventure
+                        p.cost $1870 / Per Person
+                        .card-box
+                            p.time 🕓 3 Days
+                            p.location ✈ Paris, France
+                .card
+                    .zoom-img
+                        .img-card
+                            img(src='/images/monaco_usu7xb.jpg')
+                    .text
+                        span.rating ⭐⭐⭐⭐⭐
+                        h2 The Dark Forest Adventure
+                        p.cost $1870 / Per Person
+                        .card-box
+                            p.time 🕓 3 Days
+                            p.location ✈ Monaco, Monaco
+                .card
+                    .zoom-img
+                        .img-card
+                            img(src='/images/switzerland_tubxcm.jpg')
+                    .text
+                        span.rating ⭐⭐⭐⭐⭐
+                        h2 The Dark Forest Adventure
+                        p.cost $1870 / Per Person
+                        .card-box
+                            p.time 🕓 3 Days
+                            p.location ✈ Bern, Switzerland
+                .card
+                    .zoom-img
+                        .img-card
+                            img(src='/images/korea_bxrcj5.jpg')
+                    .text
+                        span.rating ⭐⭐⭐⭐⭐
+                        h2 The Dark Forest Adventure
+                        p.cost $1870 / Per Person
+                        .card-box
+                            p.time 🕓 3 Days
+                            p.location ✈ Seoul, South Korea
+                .card
+                    .zoom-img
+                        .img-card
+                            img(src='/images/night-4336403_1920_demehp.jpg')
+                    .text
+                        span.rating ⭐⭐⭐⭐⭐
+                        h2 The Dark Forest Adventure
+                        p.cost $1870 / Per Person
+                        .card-box
+                            p.time 🕓 3 Days
+                            p.location ✈ Tokyo, japan
+        // ===========About Us===============
+        section.about
+            .about-img
+                img(src='/images/outdoor_tjjhxk.jpg')
+            .about-text
+                small ABOUT OUR COMPANY
+                h2 We are Go Trip Ravels Support Company
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    | Ut enim ad minim veniam, quis nostrud
+                a(href='#') ABOUT US
+        // ===========Footer=================
+        .footer
+            .links
+                h3 Quick Links
+                ul
+                    li Offers & Discounts
+                    li Get Coupon
+                    li Contact Us
+                    li About
+            .links
+                h3 New Products
+                ul
+                    li Woman Cloth
+                    li Fashion Accessories
+                    li Man Accessories
+                    li Rubber made Toys
+            .links
+                h3 Support
+                ul
+                    li Frequently Asked Questions
+                    li Report a Payment Issue
+                    li Terms & Conditions
+                    li Privacy Policy
