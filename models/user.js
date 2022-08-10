@@ -20,7 +20,7 @@ const UserSchema = new mongoose.Schema({
     },
     role: {
         type: Number,
-        required: true,
+        default: 1,
         enum: [1,2,3]
     }
 });

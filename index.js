@@ -4,6 +4,9 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const cookieParser = require("cookie-parser")
 const views_router = require('./routers/views_router')
+const user = require('./routers/user')
+const schedule = require('./routers/schedule')
+const order = require('./routers/order')
 
 const app = express();
 
@@ -31,6 +34,10 @@ app.set("view engine", "pug");
 
 // views
 app.use('/', views_router)
+app.use('/user', user)
+app.use('/schedule', schedule)
+app.use('/order', order)
+
 
 mongoose.connect('mongodb://localhost:27017/turin2', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
