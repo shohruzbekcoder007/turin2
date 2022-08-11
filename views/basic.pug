@@ -21,19 +21,20 @@ html(lang="en")
         section.banner
             .banner-text-item
                 .banner-heading
+                    h1=`${user.name?'Hi,'+user.name:''}`
                     h1 Find your Next tour!
-                form.form
-                    input(type='text' list='mylist' placeholder='Where would you like to go?')
-                    datalist#mylist
-                        option London
-                        option Canada
-                        option Monaco
-                        option France
-                        option Japan
-                        option Switzerland
-                        option Seoul
-                    input.date(type='date')
-                    a.book(href='#') book
+                //- form.form
+                //-     input(type='text' list='mylist' placeholder='Where would you like to go?')
+                //-     datalist#mylist
+                //-         option London
+                //-         option Canada
+                //-         option Monaco
+                //-         option France
+                //-         option Japan
+                //-         option Switzerland
+                //-         option Seoul
+                //-     input.date(type='date')
+                //-     a.book(href='#') book
         // =========Services===============
         section.services
             .service-item
